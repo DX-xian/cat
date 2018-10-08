@@ -320,21 +320,47 @@ body{
 .cedaohang li span{
     color: #ffffff;
 }
+.lunbo_pic_big{
+    width: 1349px;
+    height: 512px;
+    position: relative;
+    background-color: #626262;
+}
 .lunbo_picture {
-    width: 1230px;
+    width: 1349px;
     height: 512px;
     /*background-color: #F2F2F2;*/
     margin: 0 auto;
-    position: relative;
-    /*left:59.5px;*/
-    /*top:0;*/
+    position: absolute;
+    left:0;
+    top:0;
     overflow: hidden;
+}
+.lunbo_pic_big .lunbo_picture:nth-child(1){
+    background: url("../img/lunbo1.jpg") no-repeat;
+    background-size: cover;
+}
+.lunbo_pic_big .lunbo_picture:nth-child(2){
+   background: url("../img/lunbo2.jpg") no-repeat;
+    background-size: cover;
+}
+.lunbo_pic_big .lunbo_picture:nth-child(3){
+    background: url("../img/lunbo3.jpg") no-repeat;
+    background-size: cover;
+}
+.lunbo_pic_big .lunbo_picture:nth-child(4){
+   background: url("../img/lunbo4.jpg") no-repeat;
+    background-size: cover;
+}
+.lunbo_pic_big .lunbo_picture:nth-child(5){
+    background: url("../img/lunbo5.jpg") no-repeat;
+    background-size: cover;
 }
 .lunbo_picture img{
     width: 1230px;
     height: 512px;
     position: absolute;
-    left: 0;
+    left: 59.5px;
     right: 0;
 }
 .cedao_more{
@@ -571,6 +597,34 @@ float: left;
     float: left;
     /*margin-right: 1px;*/
     border-right: 1px solid #F5F5F5;
+    position: relative;
+}
+.pinpai_top{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    position: relative;
+    display: none;
+}
+.pinpai_top h4{
+    font-size: 12px;
+    color: white;
+    display: block;
+    position: absolute;
+    top:25%;
+    left: 40%;
+}
+.pinpai_anniu{
+    width: 56px;
+    height: 18px;
+    border-radius: 9px;
+    position: absolute;
+    top:50%;
+    left: 25%;
+    background-color: red;
+    font-size: 12px;
+    color: white;
+    padding-left: 7px;
 }
 .pinpai1:nth-child(1){
     border-bottom:  1px solid #F5F5F5;
@@ -730,6 +784,7 @@ float: left;
     height: 618px;
     /*background-color: coral;*/
     float: left;
+
 }
 .sup_carzy{
     width: 484px;
@@ -739,6 +794,7 @@ float: left;
     margin-bottom: 15px;
     padding-top: 10px;
     float: left;
+    position: relative;
 }
 .super_xuanze{
     width: 462px;
@@ -757,12 +813,19 @@ float: left;
     color: white;
     float: left;
 }
+.super_xuanze li:nth-child(2){
+    background-color: white;
+    color: black;
+}
 .carzy_bottom{
     width: 462px;
     height: 225px;
     /*background-color: aqua;*/
     margin:0 auto;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
     /*float: left;*/
 }
 .carzy_bottom img{
@@ -1059,6 +1122,104 @@ float: left;
     background: url("../img/erweima5.png") no-repeat;
     background-size: contain;
 }
+.about{
+	width: 100%;
+	height: 220px;
+	background-color: #000;
+	border-top: 2px solid red;
+	padding-top: 10px;
+}
+.help{
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+}
+.help span{
+	margin-left: 5px;
+	display: block;
+	float: left;
+	color: #e7e7e7;
+}
+.inner span:hover{
+	color: red;
+}
+.positioning img{
+	width: 1130px;
+	height: 500px;
+}
+.rolling{
+	width: 100%;
+	height: 50px;
+	background: rgba(244, 8, 62, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+	line-height: 50px;
+	z-index: 999;
+}
+.rolling input{
+	width: 648px;
+	height: 30px;
+	margin: 0;
+}
+.navigation{
+	width: 36px;
+	height: 400px;
+	display: none;
+	position: fixed;
+	top: 200px;
+	left: 100px;
+}
+.first{
+	width: 36px;
+	height: 36px;
+	margin-bottom: 3px;
+	background-color: #FF0036;
+	text-align: center;
+	line-height: 36px;
+}
+.first span{
+	font-size: 14px;
+	font-weight: 800;
+}
+.second{
+	width: 36px;
+	height: 36px;
+	margin-bottom: 3px;
+	background-color: #626262;
+	text-align: center;
+	line-height: 36px;
+}
+.second span{
+	font-size: 12px;
+}
+.rolling img{
+	width: 160px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 145px;
+}
+.btn{
+	width: 90px;
+	height: 34px;
+	background-color: red;
+	position: absolute;
+	top: 8px;
+	right: 345px;
+	text-align: center;
+	line-height: 34px;
+}
+.btn span{
+	color: #fff;
+}
+.help span{
+	font-size: 12px;
+	margin-right: 5px;
+}
+
 
 /*导航开始*/
 .daohang2{
@@ -1094,9 +1255,65 @@ float: left;
 .guding_top{
     width: 1349px;
     height: 50px;
-    background-color: #FF0036;
+    background-color: rgba(255,0,54,0.9);
     position: fixed;
     top: 0;
     left: 0;
     display: none;
+}
+.guding_con{
+    width: 1230px;
+    height: 38px;
+    /*background-color: darkslateblue;*/
+    margin: 0 auto;
+    padding-top: 12px;
+}
+.guding_logo{
+    width: 160px;
+    height: 30px;
+    float: left;
+    /*background-color: chartreuse;*/
+    position: relative;
+}
+.guding_logo .iconfont{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+.guding_logo .iconfont:nth-child(1){
+   position: absolute;
+    left: 0;
+    top: 0;
+}
+.guding_logo .iconfont:nth-child(2){
+    font-size: 40px;
+     position: absolute;
+
+    left: 96px;
+    top: -8px;
+}
+.guding_center{
+    width: 740px;
+    height: 30px;
+    /*background-color: yellowgreen;*/
+    margin: 0 auto;
+}
+.guding_input{
+    float: left;
+}
+.guding_input input{
+    width: 650px;
+    height: 30px;
+    border: none;
+}
+.guding_wenzi{
+    width: 90px;
+    height: 30px;
+    /*background-color: darkkhaki;*/
+    float: right;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
 }

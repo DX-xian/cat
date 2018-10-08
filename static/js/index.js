@@ -1,13 +1,13 @@
 window.onload = function () {
 // $(".lunbo_picture img")
 //     轮播图
-    let lunbo_picture = document.querySelector(".lunbo_picture")
-    let lunbo_img = lunbo_picture.querySelectorAll("img")
+    let lunbo_pic_big = document.querySelector(".lunbo_pic_big")
+    let lunbo_img = lunbo_pic_big.querySelectorAll(".lunbo_picture")
     // console.log(lunbo_img)
 
     let now = 0;
     let next = 0;
-    let widths = 1230;
+    let widths = 1349;
     let fn = function () {
         next++;
         if (next == lunbo_img.length) {
@@ -23,10 +23,10 @@ window.onload = function () {
 
     }
     let t = setInterval(fn, 2500);
-    lunbo_picture.onmouseenter = function () {
+    lunbo_pic_big.onmouseenter = function () {
         clearInterval(t);
     }
-    lunbo_picture.onmouseleave = function () {
+    lunbo_pic_big.onmouseleave = function () {
         t = setInterval(fn, 2500);
 
     }
@@ -39,6 +39,7 @@ window.onload = function () {
     window.onscroll = function () {
 
         let roll = document.documentElement.scrollTop || document.body.scrollTop;
+        // console.log(roll)
         // console.log(roll)
         if (roll > 810) {
             guding_top.style.display = "block"
@@ -119,11 +120,11 @@ window.onload = function () {
     arr.push(tianjai1)
     arr.push(tianjia2)
 
-    console.log(arr)
+    // console.log(arr)
     console.log($(".daohang2 .loucengkongzhi"))
     $(".daohang2 .loucengkongzhi").click(function () {
         let index = $(this).index() - 1
-        console.log(index)
+        // console.log(index)
         flag = false
         $("html")
             .stop()
@@ -163,6 +164,27 @@ window.onload = function () {
     })
 // console.log($(".super_2"))
     // console.log($("cedaohang li .iconfont"))
+    //品牌
+    $(".pinpai1").mouseenter(function () {
+        $(this).children(".pinpai_top").css("display","block")
+    })
+    $(".pinpai1").mouseleave(function () {
+        $(this).children(".pinpai_top").css("display","none")
+    })
+
+    //疯狂抢购
+    $(".super_xuanze li").click(function () {
+        $(".super_xuanze li").css({color:'black',backgroundColor:"white"})
+        $(this).css({color:'white',backgroundColor:"green"})
+        let index=$(this).index()
+        $(".carzy_bottom").css("display","none")
+
+        $(".carzy_bottom").eq(index).css("display","block")
+    })
+
+
+
+
 }
 
 
