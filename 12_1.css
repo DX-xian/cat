@@ -1,0 +1,350 @@
+.box {
+  width: 1200px;
+  border: 1px solid black;
+  height: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.box .lit {
+  border: 1px solid #123;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 600px) {
+  .box {
+    width: 600px;
+  }
+  .col-s-1 {
+    width: 8.33333333%;
+    background-color: #e54077;
+  }
+  .col-s-2 {
+    width: 16.66666667%;
+    background-color: #e54077;
+  }
+  .col-s-3 {
+    width: 25%;
+    background-color: #e54077;
+  }
+  .col-s-4 {
+    width: 33.33333333%;
+    background-color: #e54077;
+  }
+  .col-s-5 {
+    width: 41.66666667%;
+    background-color: #e54077;
+  }
+  .col-s-6 {
+    width: 50%;
+    background-color: #e54077;
+  }
+  .col-s-7 {
+    width: 58.33333333%;
+    background-color: #e54077;
+  }
+  .col-s-8 {
+    width: 66.66666667%;
+    background-color: #e54077;
+  }
+  .col-s-9 {
+    width: 75%;
+    background-color: #e54077;
+  }
+  .col-s-10 {
+    width: 83.33333333%;
+    background-color: #e54077;
+  }
+  .col-s-11 {
+    width: 91.66666667%;
+    background-color: #e54077;
+  }
+  .col-s-12 {
+    width: 100%;
+    background-color: #e54077;
+  }
+}
+@media screen and (min-width: 982px) {
+  .box {
+    width: 900px;
+  }
+  .change_bottom {
+    width: 982px;
+  }
+  .shangou {
+    width: 982px;
+  }
+  .shangou1 {
+    display: none;
+  }
+  .change_bottom img:nth-child(4) {
+    margin: 0;
+  }
+  .pinpai {
+    width: 982px;
+  }
+  .surpermarket {
+    width: 982px;
+  }
+  .super_title {
+    width: 982px;
+  }
+  .super_bottom_right {
+    width: 747px;
+  }
+  .guoji_bottom {
+    width: 982px;
+  }
+  .adv1 {
+    width: 982px;
+  }
+  .caini_con {
+    width: 982px;
+  }
+  .cainixihuan_con {
+    width: 982px;
+  }
+  .xihuan_2 {
+    width: 135px;
+  }
+  .xihuan_2 img {
+    width: 135px;
+    height: 135px;
+  }
+  .col-hid {
+    display: none;
+  }
+  .end {
+    width: 1181px;
+  }
+  .guding_top {
+    width: 100%;
+  }
+  .most_top {
+    width: 1181px;
+  }
+  .most_topcen {
+    width: 982px;
+  }
+  .lunbo_top {
+    width: 982px;
+  }
+  .lunbo_picture img {
+    width: 982px;
+  }
+  .lunbo_top {
+    width: 1062px;
+  }
+  .lunbo_right {
+    width: 782px;
+  }
+  .sousuo_center {
+    width: 982px;
+  }
+  .guding_con {
+    width: 982px;
+  }
+  #inp_xiao {
+    width: 511px;
+  }
+  .guding_center {
+    width: 630px;
+  }
+  .all_con {
+    width: 982px;
+  }
+  .cainixihuan_title {
+    width: 982px;
+  }
+  .col-m-1 {
+    width: 8.33333333%;
+    background-color: #e54077;
+  }
+  .col-m-2 {
+    width: 16.66666667%;
+    background-color: #e54077;
+  }
+  .col-m-3 {
+    width: 25%;
+    background-color: #e54077;
+  }
+  .col-m-4 {
+    width: 33.33333333%;
+    background-color: #e54077;
+  }
+  .col-m-5 {
+    width: 41.66666667%;
+    background-color: #e54077;
+  }
+  .col-m-6 {
+    width: 50%;
+    background-color: #e54077;
+  }
+  .col-m-7 {
+    width: 58.33333333%;
+    background-color: #e54077;
+  }
+  .col-m-8 {
+    width: 66.66666667%;
+    background-color: #e54077;
+  }
+  .col-m-9 {
+    width: 75%;
+    background-color: #e54077;
+  }
+  .col-m-10 {
+    width: 83.33333333%;
+    background-color: #e54077;
+  }
+  .col-m-11 {
+    width: 91.66666667%;
+    background-color: #e54077;
+  }
+  .col-m-12 {
+    width: 100%;
+    background-color: #e54077;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .box {
+    width: 1200px;
+  }
+  .cainixihuan_title {
+    width: 1230px;
+  }
+  .all_con {
+    width: 1230px;
+  }
+  .guding_center .guding_input img {
+    width: 650px;
+  }
+  .guding_input {
+    width: 650px;
+  }
+  .guding_center {
+    width: 740px;
+  }
+  .guding_con {
+    width: 1230px;
+  }
+  .change_bottom {
+    width: 1230px;
+  }
+  .shangou {
+    width: 1230px;
+  }
+  .shangou1 {
+    display: block;
+  }
+  .pinpai {
+    width: 1230px;
+  }
+  .surpermarket {
+    width: 1230px;
+  }
+  .lunbo_top {
+    width: 1230px;
+  }
+  .super_title {
+    width: 1230px;
+  }
+  .super_bottom_right {
+    width: 995px;
+  }
+  .guoji_bottom {
+    width: 1230px;
+  }
+  .adv1 {
+    width: 1230px;
+  }
+  .caini_con {
+    width: 1230px;
+  }
+  .cainixihuan_con {
+    width: 1230px;
+  }
+  .xihuan_2 {
+    width: 185px;
+  }
+  .xihuan_2 img {
+    width: 185px;
+    height: 185px;
+  }
+  .change_bottom img:nth-child(4) {
+    margin-right: 10px;
+  }
+  .col-hid {
+    display: block;
+  }
+  .guding_top {
+    width: 100%;
+  }
+  .most_top {
+    width: 100%;
+  }
+  .sousuo_center {
+    width: 1230px;
+  }
+  .most_topcen {
+    width: 1230px;
+  }
+  .lunbo_top {
+    width: 1230px;
+  }
+  .lunbo_picture img {
+    width: 1230px;
+  }
+  .end {
+    width: 100%;
+  }
+  .col-l-1 {
+    width: 8.33333333%;
+    background-color: #e54077;
+  }
+  .col-l-2 {
+    width: 16.66666667%;
+    background-color: #e54077;
+  }
+  .col-l-3 {
+    width: 25%;
+    background-color: #e54077;
+  }
+  .col-l-4 {
+    width: 33.33333333%;
+    background-color: #e54077;
+  }
+  .col-l-5 {
+    width: 41.66666667%;
+    background-color: #e54077;
+  }
+  .col-l-6 {
+    width: 50%;
+    background-color: #e54077;
+  }
+  .col-l-7 {
+    width: 58.33333333%;
+    background-color: #e54077;
+  }
+  .col-l-8 {
+    width: 66.66666667%;
+    background-color: #e54077;
+  }
+  .col-l-9 {
+    width: 75%;
+    background-color: #e54077;
+  }
+  .col-l-10 {
+    width: 83.33333333%;
+    background-color: #e54077;
+  }
+  .col-l-11 {
+    width: 91.66666667%;
+    background-color: #e54077;
+  }
+  .col-l-12 {
+    width: 100%;
+    background-color: #e54077;
+  }
+}
+/*# sourceMappingURL=12_1.css.map */

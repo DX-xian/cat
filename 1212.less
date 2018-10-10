@@ -1,0 +1,12 @@
+@width:12px;
+.div{
+  width: @width;
+}
+@col:10;
+.a(@i:1) when (@i<=@col) {
+  .col-m-@{i}{
+    width: @i/@col*100%;
+  }
+  .a(@i:@i+1)
+}
+.a();

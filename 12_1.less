@@ -1,0 +1,255 @@
+@import "var";
+.box{
+  width: @width1;
+  .border(1px,solid,black);
+  height: @width4;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .lit{
+    .border(1px,solid,#123);
+    height:100%;
+    float: left;
+    box-sizing: border-box;
+  }
+
+}
+
+@media screen and (min-width: 600px){
+  .box{
+    width: @width3;
+  }
+  .a(s,1);
+}
+
+@media screen and (min-width:@bian_min){
+  .box{
+    width: @width2;
+  }
+
+  .change_bottom{
+    width: @bian_min;
+  }
+  .shangou{
+    width: @bian_min;
+  }
+  .shangou1{
+    display: none;
+  }
+  .change_bottom img:nth-child(4){
+    margin: 0;
+  }
+  .pinpai{
+    width: @bian_min;
+
+  }
+  .surpermarket{
+    width: @bian_min;
+
+  }
+  .super_title{
+    width: @bian_min;
+  }
+  .super_bottom_right{
+    width: 747px;
+  }
+  .guoji_bottom{
+    width: @bian_min;
+  }
+  .adv1{
+    width: @bian_min;
+  }
+  .caini_con{
+    width: @bian_min;
+  }
+  .cainixihuan_con{
+    width: @bian_min;
+
+  }
+  .xihuan_2{
+    width: 135px;
+  }
+  .xihuan_2 img{
+    width: 135px;
+    height: 135px;
+  }
+  .col-hid{
+    display: none;
+  }
+  .end{
+    width: 1181px;
+  }
+  .guding_top{
+    width: 100%;
+  }
+  .most_top{
+    width: 1181px;
+  }
+  .most_topcen{
+    width: @bian_min;
+  }
+  .lunbo_top{
+    width: @bian_min;
+  }
+  .lunbo_picture img{
+    width: @bian_min;
+  }
+  .lunbo_top{
+    width: 1062px;
+  }
+  .lunbo_right{
+    width: 782px;
+  }
+  .sousuo_center{
+    width: @bian_min;
+  }
+  .guding_con{
+    width: @bian_min;
+  }
+  #inp_xiao{
+    width: 511px;
+  }
+  .guding_center{
+    width: 630px;
+  }
+  .all_con{
+    width: @bian_min;
+  }
+  .cainixihuan_title{
+    width: @bian_min;
+  }
+  .a(m,1);
+
+}
+
+@media screen and (min-width:@bian){
+.box{
+    width: @width1;
+  }
+  .cainixihuan_title{
+    width: @bian;
+  }
+  .all_con{
+    width: @bian;
+  }
+  .guding_center .guding_input img{
+    width: 650px;
+  }
+  .guding_input{
+    width: 650px;
+  }
+  .guding_center{
+    width:740px;
+  }
+  .guding_con{
+    width: @bian;
+  }
+  .change_bottom{
+    width: @bian;
+  }
+  .shangou{
+    width: @bian;
+  }
+  .shangou1{
+    display: block;
+  }
+  .pinpai{
+    width: @bian;
+
+  }
+  .surpermarket{
+    width: @bian;
+
+  }
+  .lunbo_top{
+    width: @bian;
+  }
+  .super_title{
+    width: @bian;
+  }
+  .super_bottom_right{
+    width: 995px;
+  }
+  .guoji_bottom{
+    width: @bian;
+  }
+  .adv1{
+    width: @bian;
+  }
+  .caini_con{
+    width: @bian;
+  }
+  .cainixihuan_con{
+    width: @bian;
+
+  }
+  .xihuan_2{
+    width: 185px;
+  }
+  .xihuan_2 img{
+    width: 185px;
+    height: 185px;
+  }
+  .change_bottom img:nth-child(4){
+    margin-right: 10px;;
+  }
+
+  .col-hid{
+    display: block;
+  }
+  .guding_top{
+    width: 100%;
+  }
+  .most_top{
+    width: 100%;
+  }
+  .sousuo_center{
+    width: @bian;
+  }
+  .most_topcen{
+    width: @bian;
+  }
+  .lunbo_top{
+    width: @bian;
+  }
+  .lunbo_picture img{
+    width: @bian;
+  }
+.end{
+    width: 100%;
+  }
+  .a(l,1);
+
+}
+
+
+
+
+
+
+
+
+.a(@type,@i:1) when (@i<=@cols){
+  .col-@{type}-@{i}{
+    width: @i/@cols*100%;
+    background-color: #e54077;
+  }
+  .a(@type,@i:@i+1)
+}
+//中屏
+//.a1(@i:1) when (@i<=@cols1){
+//  .col-m-@{i}{
+//    width: @i/@cols*100%;
+//    background-color: blueviolet;
+//  }
+//  .a1(@i:@i+1)
+//}
+////小屏
+//.a2(@i:1) when (@i<=@cols2){
+//  .col-s-@{i}{
+//    width: @i/@cols*100%;
+//    background-color: chartreuse;
+//  }
+//  .a2(@i:@i+1)
+//}

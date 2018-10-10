@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .big{
+            width: 1200px;
+            height: 600px;
+            margin: 0 auto;
+            border: 2px solid yellow;
+            overflow: hidden;
+        }
+        .left{
+            width: 900px;
+            height: 600px;
+            border: 1px solid purple;
+            box-sizing: border-box;
+            float: left;
+            overflow: hidden;
+        }
+        .right{
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float: right;
+        }
+        .lef_con{
+            width: 598px;
+            height: 300px;
+            background-color: #00B262;
+            float: left;
+        }
+        .lef_con2{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+
+            float: left;
+        }
+        .right_con{
+            width: 300px;
+            height: 200px;
+            background-color: darksalmon;
+        }
+
+        @media screen and (min-width: 600px){
+            .big{
+                width: 600px;
+            }
+            .left{
+                width: 600px;
+            }
+            .lef_con2{
+                display: none;
+            }
+        }
+        @media screen and (max-width:599px ){
+            body{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 900px){
+            .big{
+                width: 900px;
+
+            }
+            .left{
+                width: 600px;
+            }
+            .lef_con2{
+                display: none;
+            }
+        }
+        @media screen and  (min-width: 1200px){
+            .big{
+                width: 1200px;
+
+            }
+            .left{
+                width: 900px;
+            }
+            .lef_con2{
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="left">
+            <div class="lef_con">1</div>
+            <div class="lef_con2">2</div>
+            <div class="lef_con2">3</div>
+            <div class="lef_con">4</div>
+
+        </div>
+        <div class="right">
+            <div class="right_con">1</div>
+            <div class="right_con">2</div>
+            <div class="right_con">3</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
